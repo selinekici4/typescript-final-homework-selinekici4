@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vomw0dJu)
 # Self-Driving Car Simulation 🚗
 
 This project includes a basic **autonomous vehicle** simulation. The vehicle starts its engine, sets a destination, calculates the route, detects obstacles, and moves forward until it reaches the destination. If obstacles are detected, the route is updated, ensuring safe progress.
