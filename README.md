@@ -90,3 +90,7 @@ ts-node ./main.ts
 - **The ability to update the route and avoid obstacles is simulated.**
 
 This project is created to understand the basics of **autonomous driving logic**. 🚗💨
+
+
+
+deneme -selin
