@@ -1,7 +1,7 @@
 import { CarStatus } from "./Enum";
 import { Vehicle } from "./Vehicle";
 
-export class Car extends Vehicle{
+export class Car extends Vehicle {
 
     constructor(){
         super();
@@ -9,14 +9,22 @@ export class Car extends Vehicle{
     }
 
 
-    startEngine(): void {
+    public startEngine(): void {
+        if (this.status === CarStatus.DRIVING) {
+            console.log("Engine already runing.");
+            return;
+        }
         this.status = CarStatus.DRIVING;
         console.log("Engine started.");
 
     }
 
 
-    stopEngine(): void {
+    public stopEngine(): void {
+        if (this.status === CarStatus.STOPPED) {
+            console.log("Engine already stopped.");
+            return;
+        }
         this.status = CarStatus.STOPPED;
         console.log("Engine stoped.");
     }

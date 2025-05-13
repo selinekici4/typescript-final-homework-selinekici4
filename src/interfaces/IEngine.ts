@@ -1,4 +1,4 @@
 export interface IEngine {
-    start(): void;
-    stop(): void;
+    startEngine(): void;
+    stopEngine(): void;
 }

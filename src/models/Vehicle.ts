@@ -1,9 +1,9 @@
 import { CarStatus, Direction } from "./Enum";
 
 export class Vehicle {
-    speed: number;
-    direction: Direction;
-    status: CarStatus;
+    protected speed: number;
+    protected direction: Direction;
+    protected status: CarStatus;
     
 
     constructor() {
@@ -12,26 +12,33 @@ export class Vehicle {
         this.status = CarStatus.STOPPED;
     }
     
-    brake(): void {
+    public brake(): void {
         this.speed = 0;
         console.log("Vehicle stopped.");
     }
 
-    accelerate(): void {
+    public accelerate(): void {
         this.speed += 5;
         console.log(`Speed increased by ${this.speed} km/h`);
     }
 
-    changeDirection(newDirection: Direction):void {
+    public changeDirection(newDirection: Direction):void {
         this.direction = newDirection;
         console.log(`Direction chaned to ${this.direction}`)
     }
 
 
+    public getStatus(): CarStatus {
+        return this.status;
+    }
 
+    public getSpeed(): number {
+        return this.speed;
+    }
 
+    public getDirection(): Direction {
+        return this.direction;
+    }
 
-
-
-
+    
 }
