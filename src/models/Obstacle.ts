@@ -7,7 +7,4 @@ export class Obstacle {
         this.type = type;
         this.location = location;
     }
-
-
-    
 }

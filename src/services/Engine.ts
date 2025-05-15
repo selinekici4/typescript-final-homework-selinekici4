@@ -4,9 +4,8 @@ export class Engine implements IEngine {
 
     private engineOn: boolean;
 
-    constructor(engineOn: boolean){
+    constructor(){
         this.engineOn = false;
-    
     }
 
 

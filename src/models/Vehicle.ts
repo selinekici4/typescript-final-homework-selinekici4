@@ -14,7 +14,7 @@ export class Vehicle {
     
     public brake(): void {
         this.speed = 0;
-        console.log("Vehicle stopped.");
+        console.log("Vehicle braked.");
     }
 
     public accelerate(): void {

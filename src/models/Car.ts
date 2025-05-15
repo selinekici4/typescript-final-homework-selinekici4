@@ -11,22 +11,22 @@ export class Car extends Vehicle {
 
     public startEngine(): void {
         if (this.status === CarStatus.DRIVING) {
-            console.log("Engine already runing.");
+            console.log("Car already runing.");
             return;
         }
         this.status = CarStatus.DRIVING;
-        console.log("Engine started.");
+        console.log("Car started.");
 
     }
 
 
     public stopEngine(): void {
         if (this.status === CarStatus.STOPPED) {
-            console.log("Engine already stopped.");
+            console.log("Car already stopped.");
             return;
         }
         this.status = CarStatus.STOPPED;
-        console.log("Engine stoped.");
+        console.log("Car stoped.");
     }
 
 
